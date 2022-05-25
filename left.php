@@ -11,8 +11,8 @@
          $pfe = getAllTypes();
          foreach ($pfe as $key => $v){
              echo '<span>';
-             echo '<a href="pfe.php?nom_type=';
-             echo $v->nom_type; 
+             echo '<a href="pfe.php?id_type=';
+             echo $v->id_type; 
              echo '" class="list-group-item list-group-item-action">';
              echo'<b class="fa fa-arrow-right-square" >PFEs &nbsp;';
              echo $v->nom_type;
