@@ -40,7 +40,7 @@
                                         $type = getAllTypes();
                                         foreach($type as $key=>$v) {
                                             echo '<option value="';
-                                            echo $v->nom_type;
+                                            echo $v->id_type;
                                             echo '">';
                                             echo $v->nom_type;
                                             echo '</option>';
@@ -55,7 +55,7 @@
                                         $ens = getAllEns();
                                         foreach($ens as $key=>$v) {
                                             echo '<option value="';
-                                            echo $v->nom_enseignant;
+                                            echo $v->id_ens;
                                             echo '">';
                                             echo $v->nom_enseignant;
                                             echo '</option>';
@@ -71,7 +71,7 @@
                                         $etudiant = getAllEtudiants();
                                         foreach($etudiant as $key=>$v) {
                                             echo '<option value="';
-                                            echo $v->nom_etudiant;
+                                            echo $v->id_etd;
                                             echo '">';
                                             echo $v->nom_etudiant;
                                             echo '</option>';
