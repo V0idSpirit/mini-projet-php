@@ -91,9 +91,7 @@
     function addPfe($titre,$type,$ens,$etudiant){
         $conn=getConnection();
         $req=$conn->prepare("INSERT INTO pfe (titre,pfe_type,enseignant_id,etudiant_id)
-            VALUES (?,(SELECT id FROM types WHERE nom_type=?),
-                   (SELECT id FROM enseignants WHERE nom_enseignant=?),
-                   (SELECT id FROM etudiant WHERE nom_etudiant=?))");
+            VALUES (?,?,?,?)");
         $req->bindParam(1,$titre);
         $req->bindParam(2,$type);
         $req->bindParam(3,$ens);
